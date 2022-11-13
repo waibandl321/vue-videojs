@@ -1,17 +1,16 @@
 <template>
-  <div>
-    {{ message }}
-  </div>
+  <v-container>
+    {{ x.toFixed(2) }}
+    <ComponentTest
+      @alert-output="emitTest()"
+    />
+  </v-container>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  setup () {
-    return {
-      message: 'Hello World'
-    }
-  }
-})
+<script lang="ts" setup>
+import ComponentTest from '@/components/ComponentTest.vue'
+function emitTest () {
+  alert('HIHIHIHI')
+}
+const x: string | number = 1
 </script>
