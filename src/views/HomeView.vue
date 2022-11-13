@@ -1,14 +1,17 @@
 <template>
-  <hello-world />
+  <div>
+    {{ message }}
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import HelloWorld from '../components/HelloWorld.vue'
+import { defineComponent } from 'vue'
 
-export default Vue.extend({
-  components: {
-    HelloWorld
+export default defineComponent({
+  setup () {
+    return {
+      message: 'Hello World'
+    }
   }
 })
 </script>
