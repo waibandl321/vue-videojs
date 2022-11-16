@@ -15,6 +15,7 @@
     "vuetify": "^2.6.0"
   },
   "devDependencies": {
+    "@types/video.js": "^7.3.49",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
@@ -31,6 +32,7 @@
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
     "typescript": "~4.5.5",
+    "video.js": "^7.20.3",
     "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
